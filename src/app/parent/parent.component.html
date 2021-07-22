@@ -1,0 +1,58 @@
+<!-- <app-child [car]="cleanDataAboutCar" (carEmit)="add($event)"></app-child> -->
+<!-- <div *ngFor="let car of cars">{{car.make}} {{car.color}} {{car.year}} {{car.door}}</div> -->
+
+
+
+<label> Name </label>
+
+<div class="col">
+    <input type="text" placeholder="name" [(ngModel)]="cleanDataAboutCar.make" value="">
+</div>
+
+<label> Color </label>
+
+<div class="col ">
+    <input type="text " placeholder="color " [(ngModel)]="cleanDataAboutCar.color" value="">
+</div>
+
+<label> Year </label>
+
+<div class="col ">
+    <input type="reset " placeholder="year " [(ngModel)]="cleanDataAboutCar.year" value="">
+</div>
+
+<label> Door </label>
+
+<div class="col ">
+    <input type="text " placeholder="door " [(ngModel)]="cleanDataAboutCar.door" value="">
+</div>
+
+<br>
+<div>
+    <button class="btn " (click)="add(cleanDataAboutCar) ">Add</button>
+</div>
+<div>
+    <table border="1px " class="tb ">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Year</th>
+                <th>Door</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let car of cars ">
+                <td>{{car.make}}</td>
+                <td>{{car.color}}</td>
+                <td>{{car.year}}</td>
+                <td>{{car.door}}</td>
+                <td>
+                    <button class="btn " (click)="remove(car) ">Remove</button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</div>

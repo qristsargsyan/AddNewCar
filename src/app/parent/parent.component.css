@@ -1,0 +1,30 @@
+.tb {
+    width: 600px;
+    height: auto;
+    border-collapse: collapse;
+}
+
+.btn {
+    width: 150px;
+    background-color: rgb(119, 187, 187);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.col {
+    height: 50px;
+}
+
+input {
+    line-height: 30px;
+}
+
+label {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+th {
+    font-size: 20px;
+}
